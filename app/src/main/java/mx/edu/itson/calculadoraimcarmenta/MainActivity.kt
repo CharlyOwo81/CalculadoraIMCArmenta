@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
                 imc.setText("Debe de ingresar valores reales")
                 print(e)
             }
+
             var resultado = calcularIMC(peso, estatura)
             val formattedNumber=".%2f".format(resultado)
 
@@ -67,11 +68,10 @@ class MainActivity : AppCompatActivity() {
                     colour = 0
                 }
             }
-
             rango.setBackgroundColor(colour)
             rango.setText(salud)
-
         }
+
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -80,7 +80,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
-
     fun calcularIMC(peso:Double, estatura:Double):Double {
         return peso/(estatura*estatura)
     }

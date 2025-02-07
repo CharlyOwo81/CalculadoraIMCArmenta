@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">calculadoraIMCArmenta</string>
+    <string name="title">Calculadora de IMC</string>
+    <string name="weight">Kilos (x.xx)</string>
+    <string name="height">Altura</string>
+    <string name="calculate">Calcular</string>
+    <string name="avatar">Avatar masculino</string>
 </resources>
